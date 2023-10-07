@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startShooting();
+        //startShooting();
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class Weapon : MonoBehaviour
         Invoke("shoot",0.1f);
         Invoke("shoot",0.2f);
     }
-    void shoot() {
+    public void shoot() {
         if (bulletPrefab != null && _firePoint != null) {
             GameObject myBullet = Instantiate(bulletPrefab, _firePoint.position, Quaternion.identity) as GameObject;
             Bullet bulletComponent = myBullet.GetComponent<Bullet>();
@@ -47,10 +47,8 @@ public class Weapon : MonoBehaviour
     private void getMouseInputs() {
         //0 left , 1 right , 2 middle
         const int LEFT_MOUSE = 0;
-        const int RIGHT_MOUSE = 1;
-        const int MIDDLE_MOUSE = 2;
 
-        if (Input.GetMouseButtonDown(LEFT_MOUSE)) startShooting();
+        if (Input.GetMouseButtonDown(LEFT_MOUSE)) shoot();
 
     }
 }
