@@ -28,7 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6603154073160738485}
   m_Father: {fileID: 0}
@@ -129,7 +129,7 @@ PrefabInstance:
     - target: {fileID: 6572623058782623923, guid: e280ecd51f5f9f649930a3c041925eb3, type: 3}
       propertyPath: shooter
       value: 
-      objectReference: {fileID: 995387300002343181}
+      objectReference: {fileID: 7005137167717990718}
     - target: {fileID: 8242605415788625743, guid: e280ecd51f5f9f649930a3c041925eb3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -179,11 +179,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e280ecd51f5f9f649930a3c041925eb3, type: 3}
---- !u!1 &995387300002343181 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2598809158420721911, guid: e280ecd51f5f9f649930a3c041925eb3, type: 3}
-  m_PrefabInstance: {fileID: 3008545634990021114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6603154073160738485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8242605415788625743, guid: e280ecd51f5f9f649930a3c041925eb3, type: 3}
