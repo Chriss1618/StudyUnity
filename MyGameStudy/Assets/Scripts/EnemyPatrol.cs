@@ -69,9 +69,7 @@ public class EnemyPatrol : MonoBehaviour
         UpdateTarget();
         _aniamtor.SetBool("Idle", true);
 
-        if (_weapon != null ) {
-            _weapon.shoot();
-        }
+        _aniamtor.SetTrigger("Shoot");
 
         Debug.Log("Waiting for "+ waitingTime +" seconds");
         yield return new WaitForSeconds(waitingTime);
@@ -80,5 +78,11 @@ public class EnemyPatrol : MonoBehaviour
         Debug.Log("Finised Waiting");
 
         StartCoroutine(PatrolTarget());
+    }
+
+    public void Shoot() {
+        if (_weapon != null) {
+            _weapon.shoot();
+        }
     }
 }
