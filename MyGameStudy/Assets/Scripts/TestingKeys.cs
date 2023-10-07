@@ -17,6 +17,7 @@ public class TestingKeys : MonoBehaviour
         getMouseInputs();
 
         getKeyboardInputs();
+        getAxis();
     }
 
     private void getMouseInputs() {
@@ -54,7 +55,9 @@ public class TestingKeys : MonoBehaviour
         //Avranno un valore tra -1 a 1
         float horizontal    = Input.GetAxis( HORIZONTAL_AXIS );
         float vertical      = Input.GetAxis( VERTICAL_AXIS );
-
+        if (horizontal != 0 || vertical != 0) {
+            Debug.Log("H ->" + horizontal + " --- V ->" + vertical);
+        }
 
     }
 }
