@@ -369,7 +369,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   - m_Name: attacking
     m_Type: 9
@@ -450,7 +450,7 @@ AnimatorStateMachine:
   m_AnyStatePosition: {x: 60, y: -50, z: 0}
   m_EntryPosition: {x: 50, y: 20, z: 0}
   m_ExitPosition: {x: 590, y: 20, z: 0}
-  m_ParentStateMachinePosition: {x: 60, y: -130, z: 0}
+  m_ParentStateMachinePosition: {x: 30, y: 130, z: 0}
   m_DefaultState: {fileID: -2192667748237467136}
 --- !u!1109 &3206649689903401380
 AnimatorTransition:
@@ -548,7 +548,7 @@ AnimatorStateMachine:
   m_AnyStatePosition: {x: 40, y: 0, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 780, y: 110, z: 0}
-  m_ParentStateMachinePosition: {x: 30, y: -90, z: 0}
+  m_ParentStateMachinePosition: {x: 30, y: 210, z: 0}
   m_DefaultState: {fileID: 4978045272344991164}
 --- !u!1101 &4081869610358276632
 AnimatorStateTransition:
