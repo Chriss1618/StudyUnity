@@ -770,6 +770,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  jumpForce: 4
+  groundCheck: {fileID: 366682882}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckRadius: 0.025
 --- !u!1 &878505854
 GameObject:
   m_ObjectHideFlags: 0
