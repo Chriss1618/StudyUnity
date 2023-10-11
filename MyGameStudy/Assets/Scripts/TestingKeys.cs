@@ -23,8 +23,8 @@ public class TestingKeys : MonoBehaviour
     private void getMouseInputs() {
         //0 left , 1 right , 2 middle
         const int LEFT_MOUSE = 0;
-        const int RIGHT_MOUSE = 1;
-        const int MIDDLE_MOUSE = 2;
+        //const int RIGHT_MOUSE = 1;
+        //const int MIDDLE_MOUSE = 2;
 
         if ( Input.GetMouseButtonDown( LEFT_MOUSE ) )              Debug.Log("Mouse "  + LEFT_MOUSE + " is down"); 
         if ( Input.GetMouseButton( LEFT_MOUSE ) && !isPressed ) {  Debug.Log("Mouse "  + LEFT_MOUSE + " is Hold"); isPressed = true;}
