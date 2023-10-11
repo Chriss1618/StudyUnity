@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
             _animator.SetTrigger("attacking");
         }
     }
+
     void FixedUpdate() {
         if (_isAttacking == false) {
             float horizontalVelocity = _movement.normalized.x * speed;
