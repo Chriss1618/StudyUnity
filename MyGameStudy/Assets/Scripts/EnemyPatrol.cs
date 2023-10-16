@@ -1,88 +1,103 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
 
     public float speed = 1f;
-    public float minX;
-    public float maxX;
-    public float waitingTime = 2f;
+    public float wallAware = 0.5f;
+    public LayerMask groundLayer;
 
-    private GameObject _target;
+    public float playerAware = 3f;
+    public float aimingTime = 0.5f;
+    public float shootingTime = 1.0f;
+
+    //Movement
+    private Vector2 _movement;
+    private bool _facingRight;
+    private bool _isAttacking;
+
+    //Components
+    private Rigidbody2D _rigidbody;
     private Weapon _weapon;
     private Animator _aniamtor;
-
+    
 
     void Awake() {
-        _aniamtor = GetComponent<Animator>();
-        _weapon = GetComponentInChildren<Weapon>();
+        _aniamtor   = GetComponent<Animator>();
+        _weapon     = GetComponentInChildren<Weapon>();
+        _rigidbody  = GetComponentInChildren<Rigidbody2D>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        UpdateTarget();
-        StartCoroutine(PatrolTarget());
+        checkFacing();
+        //StartCoroutine(PatrolTarget());
     }
 
-    // Update is called once per frame
+    private void checkFacing() {
+        _facingRight = (transform.localScale.x > 0);
+    }
+    
+    
+    private void Update() {
+        Vector2 direction;
+        if (_facingRight)  direction = Vector2.right;
+        else direction = Vector2.left;
+
+        if (! _isAttacking) {
+            if ( Physics2D.Raycast(transform.position,direction,wallAware,groundLayer)) {
+                Flip();
+            }
+        }
+
+    }
+
     void FixedUpdate()
     {
+        float velocityHorizontal = speed;
+        if (! _facingRight) velocityHorizontal *= -1;
+
+        _rigidbody.velocity = new Vector2(velocityHorizontal, _rigidbody.velocity.y);
         
     }
 
-    private void UpdateTarget() {
-        if (_target == null) {
-            _target = new GameObject("Target");
-            _target.transform.position = new Vector2(minX,transform.position.y);
-            transform.localScale = new Vector3(-1, 1, 1);
-            return;
-        }
+    private void LateUpdate() {
+        _aniamtor.SetBool("Idle", _rigidbody.velocity == Vector2.zero);
+    }
 
-        if ( _target.transform.position.x == minX) {
-            _target.transform.position = new Vector2(maxX, transform.position.y);
-            transform.localScale = Vector3.one; 
-        } else if(_target.transform.position.x == maxX){
-            _target.transform.position = new Vector2(minX, transform.position.y);
-            transform.localScale = new Vector3(-1, 1, 1);
-
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (_isAttacking == false && collision.CompareTag("Player")) {
+            StartCoroutine(AimAndShoot());
         }
     }
 
-    IEnumerator PatrolTarget() {
-        while ( Vector2.Distance(transform.position,_target.transform.position) > 0.05f) {
 
-            //update animation
-            _aniamtor.SetBool("Idle",false);
+    private IEnumerator AimAndShoot() {
+        float speedBackup = speed;
+        speed = 0f;
 
-            Vector2 direction = _target.transform.position - transform.position;
-            float xDirection = direction.x;
+        _isAttacking = true;
 
-            transform.Translate(direction.normalized * speed * Time.deltaTime);
-            yield return null;
-        }
-       
-
-        Debug.Log("Target Reached");
-        transform.position = new Vector2(_target.transform.position.x, transform.position.y);
-        UpdateTarget();
-        _aniamtor.SetBool("Idle", true);
-
+        yield return new WaitForSeconds(aimingTime);
         _aniamtor.SetTrigger("Shoot");
 
-        Debug.Log("Waiting for "+ waitingTime +" seconds");
-        yield return new WaitForSeconds(waitingTime);
+        yield return new WaitForSeconds(shootingTime);
 
-
-        Debug.Log("Finised Waiting");
-
-        StartCoroutine(PatrolTarget());
+        _isAttacking = false;
+        speed = speedBackup;
     }
 
-    public void Shoot() {
+    public void CanShoot() {
         if (_weapon != null) {
             _weapon.shoot();
         }
+    }
+
+    private void Flip() {
+        _facingRight = !_facingRight;
+        transform.localScale = new Vector3( transform.localScale.x * -1f, transform.localScale.y, transform.localScale.z);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     const string HORIZONTAL_AXIS    = "Horizontal";
-    //const string VERTICAL_AXIS      = "Vertical";
+    //const string VERTICAL_AXIS    = "Vertical";
     public float longIdleTime = 5f;
     public float speed = 2.5f;
     public float jumpForce = 2.5f;

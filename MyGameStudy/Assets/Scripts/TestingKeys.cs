@@ -25,11 +25,11 @@ public class TestingKeys : MonoBehaviour
         const int LEFT_MOUSE = 0;
         //const int RIGHT_MOUSE = 1;
         //const int MIDDLE_MOUSE = 2;
-
+        /*
         if ( Input.GetMouseButtonDown( LEFT_MOUSE ) )              Debug.Log("Mouse "  + LEFT_MOUSE + " is down"); 
         if ( Input.GetMouseButton( LEFT_MOUSE ) && !isPressed ) {  Debug.Log("Mouse "  + LEFT_MOUSE + " is Hold"); isPressed = true;}
         if ( Input.GetMouseButtonUp( LEFT_MOUSE ) ) {              Debug.Log("Mouse "  + LEFT_MOUSE + " Released"); isPressed = false;}
-    
+        */
     }
 
     private void getKeyboardInputs() {
@@ -56,7 +56,7 @@ public class TestingKeys : MonoBehaviour
         float horizontal    = Input.GetAxis( HORIZONTAL_AXIS );
         float vertical      = Input.GetAxis( VERTICAL_AXIS );
         if (horizontal != 0 || vertical != 0) {
-            Debug.Log("H ->" + horizontal + " --- V ->" + vertical);
+            //Debug.Log("H ->" + horizontal + " --- V ->" + vertical);
         }
 
     }

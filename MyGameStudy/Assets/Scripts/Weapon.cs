@@ -35,9 +35,9 @@ public class Weapon : MonoBehaviour
         Invoke("shoot",0.2f);
     }
     public void shoot() {
-        ShootWithRaycast();
+        //ShootWithRaycast();
 
-        /*if (bulletPrefab != null && _firePoint != null) {
+        if (bulletPrefab != null && _firePoint != null) {
             GameObject myBullet = Instantiate(bulletPrefab, _firePoint.position, Quaternion.identity) as GameObject;
             Bullet bulletComponent = myBullet.GetComponent<Bullet>();
             if (shooter.transform.localScale.x < 0f) {
@@ -47,7 +47,7 @@ public class Weapon : MonoBehaviour
                 bulletComponent.direction = Vector2.right;
             }
 
-        }*/
+        }
     }
 
 
