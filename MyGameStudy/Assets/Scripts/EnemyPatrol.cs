@@ -23,12 +23,14 @@ public class EnemyPatrol : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private Weapon _weapon;
     private Animator _aniamtor;
+    private AudioSource _audioSource;
     
 
     void Awake() {
         _aniamtor   = GetComponent<Animator>();
         _weapon     = GetComponentInChildren<Weapon>();
         _rigidbody  = GetComponentInChildren<Rigidbody2D>();
+        _audioSource = GetComponentInChildren<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
