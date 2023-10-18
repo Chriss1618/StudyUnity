@@ -38,12 +38,12 @@ public class TestingKeys : MonoBehaviour
     }
     private void getKeyCodeInput(KeyCode keyCode) {
         if (Input.GetKeyDown(keyCode)) {
-            Debug.Log("Using keycode -> pressed " + keyCode);
+            //Debug.Log("Using keycode -> pressed " + keyCode);
         }
     }
     private void getActionInput(string inputString) {
         if (Input.GetButtonDown(inputString)) {
-            Debug.Log("Using keycode -> pressed " + inputString);
+            //Debug.Log("Using keycode -> pressed " + inputString);
         }
     }
 

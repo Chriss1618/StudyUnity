@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int damage = 1;
     public float speed = 2f;
     public Vector2 direction;
     public Color explosionColor;
@@ -13,7 +14,7 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private SpriteRenderer _renderer;
     private float _startingTime;
-
+    private bool _isReturning = false;
     public float livingTime = 3f; // 3 seconds
 
     private void Awake() {
@@ -41,9 +42,21 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if ( collision.CompareTag("Player")) {
+        if ( _isReturning == false && collision.CompareTag("Player")) {
             Destroy(gameObject);
-            Debug.Log("Toccato Player");
+            Debug.Log("Colpito Player");
+            collision.SendMessageUpwards("AddDamage", damage);
         }
+
+        if (_isReturning == true && collision.CompareTag("Enemy")) {
+            Debug.Log("Colpito Enemy");
+            Destroy(gameObject);
+            collision.SendMessageUpwards("AddDamage", damage);
+        }
+    }
+
+    public void returnBullet() {
+        _isReturning = true;
+        direction *= -1;
     }
 }

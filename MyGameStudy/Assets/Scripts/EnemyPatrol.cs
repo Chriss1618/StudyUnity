@@ -60,6 +60,7 @@ public class EnemyPatrol : MonoBehaviour
         float velocityHorizontal = speed;
         if (! _facingRight) velocityHorizontal *= -1;
 
+        if ( _isAttacking ) velocityHorizontal = 0;
         _rigidbody.velocity = new Vector2(velocityHorizontal, _rigidbody.velocity.y);
         
     }
@@ -74,10 +75,7 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-
     private IEnumerator AimAndShoot() {
-        float speedBackup = speed;
-        speed = 0f;
 
         _isAttacking = true;
 
@@ -87,7 +85,6 @@ public class EnemyPatrol : MonoBehaviour
         yield return new WaitForSeconds(shootingTime);
 
         _isAttacking = false;
-        speed = speedBackup;
     }
 
     public void CanShoot() {
@@ -99,5 +96,14 @@ public class EnemyPatrol : MonoBehaviour
     private void Flip() {
         _facingRight = !_facingRight;
         transform.localScale = new Vector3( transform.localScale.x * -1f, transform.localScale.y, transform.localScale.z);
+    }
+
+    private void OnEnable() {
+        _isAttacking = false;
+    }
+
+    private void OnDisable() {
+        _isAttacking = false;
+        StopCoroutine(AimAndShoot());
     }
 }
