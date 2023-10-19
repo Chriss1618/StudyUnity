@@ -234,7 +234,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72385287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.300771, y: -0.618509, z: -0.6579828}
+  m_LocalPosition: {x: 1.342, y: -0.583, z: -0.6579828}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5192,7 +5192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152265997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.95016, y: 2.1269622, z: -0.6579828}
+  m_LocalPosition: {x: 7.965, y: 2.151, z: -0.6579828}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5504,7 +5504,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 405786605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1117454340}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2110870491}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 814500245}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 814500242}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 872166967}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &405786605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10927,10 +10987,70 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 617787346}
+  m_TargetGraphic: {fileID: 405786605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1117454340}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2110870491}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 814500245}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 814500242}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 872166967}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &617787346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11890,6 +12010,7 @@ GameObject:
   - component: {fileID: 764971042}
   - component: {fileID: 764971041}
   - component: {fileID: 764971040}
+  - component: {fileID: 764971043}
   - component: {fileID: 764971039}
   m_Layer: 5
   m_Name: 'Quit Button '
@@ -11983,7 +12104,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764971041}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764971043}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764971041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12022,6 +12155,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764971037}
   m_CullTransparentMesh: 1
+--- !u!114 &764971043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764971037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f44de8f80b07a4c9aaf50b47fc3704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809900369
 GameObject:
   m_ObjectHideFlags: 0
@@ -12192,7 +12337,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814500239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: df6a03cd308b9d842a4c2a9350d72c4b, type: 2}
   m_CullingMode: 0
@@ -12274,7 +12419,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814500239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405c4fdc4f24ce44688345af8aec1142, type: 3}
   m_Name: 
@@ -12300,6 +12445,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealt: 3
+  heartUI: {fileID: 1483660056}
+  GameOverMenu: {fileID: 1945954924}
 --- !u!114 &814500247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12500,7 +12647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &872166968
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16790,672 +16937,116 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 919853626}
     m_ColliderPaths:
-    - - X: 105599992
-        Y: 65599996
-      - X: 104000000
-        Y: 65599996
-      - X: 104000000
-        Y: 59200000
-      - X: 105599992
-        Y: 59200000
-    - - X: 105599992
-        Y: 59199996
-      - X: 104000000
-        Y: 59199996
-      - X: 104000000
-        Y: 54400000
-      - X: 105599992
-        Y: 54400000
-    - - X: 105599992
-        Y: 54399996
-      - X: 104000000
-        Y: 54399996
-      - X: 104000000
-        Y: 49600000
-      - X: 105599992
-        Y: 49600000
-    - - X: 105599992
-        Y: 49599996
-      - X: 104000000
-        Y: 49599996
-      - X: 104000000
-        Y: 44800000
-      - X: 105599992
-        Y: 44800000
-    - - X: -25600002
-        Y: 49599996
-      - X: -27200000
-        Y: 49599996
-      - X: -27200000
-        Y: 44800000
-      - X: -25600002
-        Y: 44800000
-    - - X: -25600002
-        Y: 44799996
-      - X: -27200000
-        Y: 44799996
-      - X: -27200000
-        Y: 40000000
-      - X: -25600002
-        Y: 40000000
-    - - X: 105599992
-        Y: 44799996
-      - X: 104000000
-        Y: 44799996
-      - X: 104000000
-        Y: 40000000
-      - X: 105599992
-        Y: 40000000
-    - - X: 105599992
-        Y: 39999996
-      - X: 104000000
-        Y: 39999996
-      - X: 104000000
-        Y: 38400000
-      - X: 105599992
-        Y: 38400000
-    - - X: -25600002
-        Y: 39999996
-      - X: -27200000
-        Y: 39999996
-      - X: -27200000
-        Y: 38400000
-      - X: -25600002
-        Y: 38400000
-    - - X: -25600002
-        Y: 38399996
-      - X: -27200000
-        Y: 38399996
-      - X: -27200000
-        Y: 35200000
-      - X: -25600002
-        Y: 35200000
-    - - X: 105599992
-        Y: 38399996
-      - X: 104000000
-        Y: 38399996
-      - X: 104000000
-        Y: 35200000
-      - X: 105599992
-        Y: 35200000
-    - - X: -25600002
-        Y: 35199996
-      - X: -27200000
-        Y: 35199996
-      - X: -27200000
-        Y: 33600000
-      - X: -25600002
-        Y: 33600000
-    - - X: 105599992
-        Y: 35199996
-      - X: 104000000
-        Y: 35199996
-      - X: 104000000
-        Y: 33600000
-      - X: 105599992
-        Y: 33600000
-    - - X: 94399992
-        Y: 35199996
-      - X: 89600000
-        Y: 35199996
-      - X: 89600000
-        Y: 33600000
-      - X: 94399992
-        Y: 33600000
-    - - X: -25600002
-        Y: 33599996
-      - X: -27200000
-        Y: 33599996
-      - X: -27200000
-        Y: 30400000
-      - X: -25600002
-        Y: 30400000
-    - - X: 105599992
-        Y: 33599996
-      - X: 104000000
-        Y: 33599996
-      - X: 104000000
-        Y: 30400000
-      - X: 105599992
-        Y: 30400000
-    - - X: -25600002
-        Y: 30399998
-      - X: -27200000
-        Y: 30399998
-      - X: -27200000
-        Y: 27200000
-      - X: -25600002
-        Y: 27200000
-    - - X: 105599992
-        Y: 30399998
-      - X: 104000000
-        Y: 30399998
-      - X: 104000000
-        Y: 27200000
-      - X: 105599992
-        Y: 27200000
-    - - X: -25600002
-        Y: 27199998
-      - X: -27200000
-        Y: 27199998
-      - X: -27200000
-        Y: 25600000
-      - X: -25600002
-        Y: 25600000
-    - - X: 105599992
-        Y: 27199998
-      - X: 104000000
-        Y: 27199998
-      - X: 104000000
-        Y: 25600000
-      - X: 105599992
-        Y: 25600000
-    - - X: 79999992
-        Y: 25599998
-      - X: 78400000
-        Y: 25599998
-      - X: 78400000
-        Y: 23999998
-      - X: 79999992
-        Y: 23999998
-    - - X: 83200000
-        Y: 25599998
-      - X: 80000000
-        Y: 25599998
-      - X: 80000000
-        Y: 23999998
-      - X: 83200000
-        Y: 23999998
-    - - X: -25600002
-        Y: 25599998
-      - X: -27200000
-        Y: 25599998
-      - X: -27200000
-        Y: 22400000
-      - X: -25600002
-        Y: 22400000
-    - - X: 105599992
-        Y: 25599998
-      - X: 104000000
-        Y: 25599998
-      - X: 104000000
-        Y: 22400000
-      - X: 105599992
-        Y: 22400000
-    - - X: 105599992
-        Y: 22399998
-      - X: 104000000
-        Y: 22399998
-      - X: 104000000
-        Y: 16000000
-      - X: 97600000
-        Y: 16000000
-      - X: 97600000
-        Y: 12800000
-      - X: 104000000
-        Y: 12800000
-      - X: 104000000
-        Y: 9600000
-      - X: 105599992
-        Y: 9600000
-    - - X: -25600002
-        Y: 22399998
-      - X: -27200000
-        Y: 22399998
-      - X: -27200000
-        Y: 9600000
-      - X: -25600002
-        Y: 9600000
-    - - X: 79999992
-        Y: 16000000
-      - X: 75200000
-        Y: 16000000
-      - X: 75200000
-        Y: 12800000
-      - X: 79999992
-        Y: 12800000
-    - - X: 87999992
-        Y: 16000000
-      - X: 80000000
-        Y: 16000000
-      - X: 80000000
-        Y: 12800000
-      - X: 87999992
-        Y: 12800000
-    - - X: 97599992
-        Y: 16000000
-      - X: 88000000
-        Y: 16000000
-      - X: 88000000
-        Y: 12800000
-      - X: 97599992
-        Y: 12800000
-    - - X: 75199992
-        Y: 16000000
-      - X: 70400000
-        Y: 16000000
-      - X: 70400000
-        Y: 12800000
-      - X: 75199992
-        Y: 12800000
-    - - X: 70399992
-        Y: 16000000
-      - X: 67200000
-        Y: 16000000
-      - X: 67200000
-        Y: 12800000
-      - X: 70399992
-        Y: 12800000
-    - - X: -4800000
-        Y: 14400001
-      - X: -7999999
-        Y: 14400001
-      - X: -7999999
-        Y: 11200000
-      - X: -4800000
-        Y: 11200000
-    - - X: 4799999
-        Y: 14400001
-      - X: -4799999
-        Y: 14400001
-      - X: -4799999
-        Y: 11200000
-      - X: 4799999
-        Y: 11200000
-    - - X: -8000000
-        Y: 14400001
-      - X: -20800000
-        Y: 14400001
-      - X: -20800000
-        Y: 11200000
-      - X: -8000000
-        Y: 11200000
-    - - X: 31999998
-        Y: 14400001
-      - X: 30400000
-        Y: 14400001
-      - X: 30400000
-        Y: 11200000
-      - X: 31999998
-        Y: 11200000
-    - - X: -20800002
-        Y: 14400001
-      - X: -23999998
-        Y: 14400001
-      - X: -23999998
-        Y: 11200000
-      - X: -20800002
-        Y: 11200000
-    - - X: 27199998
-        Y: 14400001
-      - X: 25600000
-        Y: 14400001
-      - X: 25600000
-        Y: 11200000
-      - X: 27199998
-        Y: 11200000
-    - - X: 22399998
-        Y: 14400001
-      - X: 9600000
-        Y: 14400001
-      - X: 9600000
-        Y: 11200000
-      - X: 22399998
-        Y: 11200000
-    - - X: 30399998
-        Y: 14400001
-      - X: 27200000
-        Y: 14400001
-      - X: 27200000
-        Y: 11200000
-      - X: 30399998
-        Y: 11200000
-    - - X: -24000000
-        Y: 14400001
-      - X: -25600000
-        Y: 14400001
-      - X: -25600000
-        Y: 11200000
-      - X: -24000000
-        Y: 11200000
-    - - X: 9599999
-        Y: 14400001
-      - X: 4800000
-        Y: 14400001
-      - X: 4800000
-        Y: 11200000
-      - X: 9599999
-        Y: 11200000
-    - - X: 25599998
-        Y: 14400001
-      - X: 22400000
-        Y: 14400001
-      - X: 22400000
-        Y: 11200000
-      - X: 25599998
-        Y: 11200000
-    - - X: -25600002
-        Y: 9599999
-      - X: -27200000
-        Y: 9599999
-      - X: -27200000
-        Y: 4800000
-      - X: -25600002
-        Y: 4800000
-    - - X: 105599992
-        Y: 9599999
-      - X: 104000000
-        Y: 9599999
-      - X: 104000000
-        Y: 4800000
-      - X: 105599992
-        Y: 4800000
-    - - X: 105599992
-        Y: 4799999
-      - X: 104000000
-        Y: 4799999
-      - X: 104000000
-        Y: -4799999
-      - X: 105599992
-        Y: -4799999
-    - - X: -25600002
-        Y: 4799999
-      - X: -27200000
-        Y: 4799999
-      - X: -27200000
-        Y: -4799999
-      - X: -25600002
-        Y: -4799999
-    - - X: 49599996
-        Y: 1600000
-      - X: 44800000
-        Y: 1600000
-      - X: 44800000
-        Y: -1600000
-      - X: 49599996
-        Y: -1600000
-    - - X: 33599996
-        Y: 1600000
-      - X: 31999998
-        Y: 1600000
-      - X: 31999998
-        Y: -1600000
-      - X: 33599996
-        Y: -1600000
-    - - X: 35199996
-        Y: 1600000
-      - X: 33600000
-        Y: 1600000
-      - X: 33600000
-        Y: -1600000
-      - X: 35199996
-        Y: -1600000
-    - - X: 38399996
-        Y: 1600000
-      - X: 35200000
-        Y: 1600000
-      - X: 35200000
-        Y: -1600000
-      - X: 38399996
-        Y: -1600000
-    - - X: 39999996
-        Y: 1600000
-      - X: 38400000
-        Y: 1600000
-      - X: 38400000
-        Y: -1600000
-      - X: 39999996
-        Y: -1600000
-    - - X: 59199996
-        Y: 1600000
-      - X: 54400000
-        Y: 1600000
-      - X: 54400000
-        Y: -1600000
-      - X: 59199996
-        Y: -1600000
-    - - X: 54399996
-        Y: 1600000
-      - X: 49600000
-        Y: 1600000
-      - X: 49600000
-        Y: -1600000
-      - X: 54399996
-        Y: -1600000
-    - - X: 65599996
-        Y: 1600000
-      - X: 59200000
-        Y: 1600000
-      - X: 59200000
-        Y: -1600000
-      - X: 65599996
-        Y: -1600000
-    - - X: 44799996
-        Y: 1600000
-      - X: 40000000
-        Y: 1600000
-      - X: 40000000
-        Y: -1600000
-      - X: 44799996
-        Y: -1600000
-    - - X: -25600002
-        Y: -4800000
-      - X: -27200000
-        Y: -4800000
-      - X: -27200000
-        Y: -7999999
-      - X: -25600002
-        Y: -7999999
-    - - X: 105599992
-        Y: -4800000
-      - X: 104000000
-        Y: -4800000
-      - X: 104000000
-        Y: -7999999
-      - X: 105599992
-        Y: -7999999
-    - - X: 105599992
-        Y: -8000000
-      - X: 104000000
-        Y: -8000000
-      - X: 104000000
-        Y: -11199999
-      - X: 99200000
-        Y: -11199999
-      - X: 99200000
-        Y: -8000000
-      - X: 97600000
-        Y: -8000000
-      - X: 97600000
-        Y: -14399999
-      - X: 105599992
-        Y: -14399999
-    - - X: 97599992
-        Y: -8000000
-      - X: 94399992
-        Y: -8000000
-      - X: 94399992
-        Y: -11199999
-      - X: 88000000
-        Y: -11199999
-      - X: 88000000
-        Y: -14399999
-      - X: 97599992
-        Y: -14399999
-    - - X: -25600002
-        Y: -8000000
-      - X: -27200000
-        Y: -8000000
-      - X: -27200000
-        Y: -14399999
-      - X: -25600002
-        Y: -14399999
-    - - X: 65599996
-        Y: -11199999
-      - X: 63999996
-        Y: -11199999
-      - X: 63999996
-        Y: -14399999
-      - X: 65599996
-        Y: -14399999
-    - - X: 70399992
-        Y: -11199999
-      - X: 65600000
-        Y: -11199999
-      - X: 65600000
-        Y: -14399999
-      - X: 70399992
-        Y: -14399999
-    - - X: 75199992
-        Y: -11199999
-      - X: 70400000
-        Y: -11199999
-      - X: 70400000
-        Y: -14399999
-      - X: 75199992
-        Y: -14399999
-    - - X: 79999992
-        Y: -11199999
-      - X: 75200000
-        Y: -11199999
-      - X: 75200000
-        Y: -14399999
-      - X: 79999992
-        Y: -14399999
-    - - X: 87999992
-        Y: -11199999
-      - X: 80000000
-        Y: -11199999
-      - X: 80000000
-        Y: -14399999
-      - X: 87999992
-        Y: -14399999
-    - - X: 9599999
-        Y: -11199999
-      - X: 4800000
-        Y: -11199999
-      - X: 4800000
-        Y: -14399999
-      - X: 9599999
-        Y: -14399999
-    - - X: 4799999
-        Y: -11199999
-      - X: -4799999
-        Y: -11199999
-      - X: -4799999
-        Y: -14399999
-      - X: 4799999
-        Y: -14399999
-    - - X: 30399998
-        Y: -11199999
-      - X: 27200000
-        Y: -11199999
-      - X: 27200000
-        Y: -14399999
-      - X: 30399998
-        Y: -14399999
-    - - X: -4800000
-        Y: -11199999
-      - X: -7999999
-        Y: -11199999
-      - X: -7999999
-        Y: -14399999
-      - X: -4800000
-        Y: -14399999
-    - - X: -8000000
-        Y: -11199999
-      - X: -20800000
-        Y: -11199999
-      - X: -20800000
-        Y: -14399999
-      - X: -8000000
-        Y: -14399999
-    - - X: -20800002
-        Y: -11199999
-      - X: -23999998
-        Y: -11199999
-      - X: -23999998
-        Y: -14399999
-      - X: -20800002
-        Y: -14399999
-    - - X: -24000000
-        Y: -11199999
-      - X: -25600000
-        Y: -11199999
-      - X: -25600000
-        Y: -14399999
-      - X: -24000000
-        Y: -14399999
-    - - X: 22399998
-        Y: -11199999
-      - X: 9600000
-        Y: -11199999
-      - X: 9600000
-        Y: -14399999
-      - X: 22399998
-        Y: -14399999
-    - - X: 25599998
-        Y: -11199999
-      - X: 22400000
-        Y: -11199999
-      - X: 22400000
-        Y: -14399999
-      - X: 25599998
-        Y: -14399999
-    - - X: 31999998
-        Y: -11199999
-      - X: 30400000
-        Y: -11199999
-      - X: 30400000
-        Y: -14399999
-      - X: 31999998
-        Y: -14399999
-    - - X: 27199998
-        Y: -11199999
-      - X: 25600000
-        Y: -11199999
-      - X: 25600000
-        Y: -14399999
-      - X: 27199998
-        Y: -14399999
+    - - X: 105866664
+        Y: 65866660
+      - X: 103733328
+        Y: 65866660
+      - X: 103733328
+        Y: 16266667
+      - X: 66933332
+        Y: 16266667
+      - X: 66933332
+        Y: 12533333
+      - X: 103733328
+        Y: 12533333
+      - X: 103733328
+        Y: -10933332
+      - X: 99466664
+        Y: -10933332
+      - X: 99466664
+        Y: -7733333
+      - X: 94133328
+        Y: -7733333
+      - X: 94133328
+        Y: -10933332
+      - X: 63733328
+        Y: -10933332
+      - X: 63733328
+        Y: -14666666
+      - X: 105866664
+        Y: -14666666
+    - - X: 32266664
+        Y: -10933332
+      - X: -25333336
+        Y: -10933332
+      - X: -25333336
+        Y: 10933334
+      - X: 32266664
+        Y: 10933334
+      - X: 32266664
+        Y: 14666667
+      - X: -25333336
+        Y: 14666667
+      - X: -25333336
+        Y: 49866664
+      - X: -27466666
+        Y: 49866664
+      - X: -27466666
+        Y: -14666666
+      - X: 32266664
+        Y: -14666666
+    - - X: 94666664
+        Y: 35466664
+      - X: 89333336
+        Y: 35466664
+      - X: 89333336
+        Y: 33333332
+      - X: 94666664
+        Y: 33333332
+    - - X: 83466664
+        Y: 25866664
+      - X: 78133328
+        Y: 25866664
+      - X: 78133328
+        Y: 23733332
+      - X: 83466664
+        Y: 23733332
+    - - X: 65866660
+        Y: 1866666
+      - X: 31733332
+        Y: 1866666
+      - X: 31733332
+        Y: -1866666
+      - X: 65866660
+        Y: -1866666
   m_CompositePaths:
     m_Paths:
-    - - {x: 10.55997, y: -1.4399999}
-      - {x: 10.55997, y: 6.5599995}
-      - {x: 10.400001, y: 6.5599704}
-      - {x: 10.39997, y: 1.6}
-      - {x: 6.7200003, y: 1.5999707}
-      - {x: 6.72003, y: 1.28}
-      - {x: 10.400001, y: 1.2799706}
-      - {x: 10.39997, y: -1.1199999}
-      - {x: 9.92, y: -1.1199706}
-      - {x: 9.9199705, y: -0.8}
-      - {x: 9.44, y: -0.80002934}
-      - {x: 9.43997, y: -1.1199999}
-      - {x: 6.3999996, y: -1.1200292}
-      - {x: 6.4000287, y: -1.4399999}
-    - - {x: 3.1999705, y: -1.4399999}
-      - {x: 3.1999705, y: -1.1199999}
-      - {x: -2.5600002, y: -1.1199706}
-      - {x: -2.5599709, y: 1.12}
-      - {x: 3.1999998, y: 1.1200293}
-      - {x: 3.1999705, y: 1.4400002}
-      - {x: -2.5600002, y: 1.4400295}
-      - {x: -2.5600297, y: 4.9599996}
-      - {x: -2.72, y: 4.9599705}
-      - {x: -2.719971, y: -1.4399999}
-    - - {x: 9.43997, y: 3.3600001}
-      - {x: 9.43997, y: 3.5199997}
-      - {x: 8.96, y: 3.5199704}
-      - {x: 8.96003, y: 3.3600001}
-    - - {x: 8.31997, y: 2.3999999}
-      - {x: 8.31997, y: 2.56}
-      - {x: 7.84, y: 2.5599704}
-      - {x: 7.8400297, y: 2.3999999}
-    - - {x: 6.5599704, y: -0.16}
-      - {x: 6.5599704, y: 0.16}
-      - {x: 3.1999998, y: 0.1599707}
-      - {x: 3.2000291, y: -0.16}
+    - - {x: 10.586637, y: -1.4666666}
+      - {x: 10.586637, y: 6.586666}
+      - {x: 10.373333, y: 6.586637}
+      - {x: 10.373303, y: 1.6266667}
+      - {x: 6.693333, y: 1.6266375}
+      - {x: 6.6933627, y: 1.2533333}
+      - {x: 10.373333, y: 1.2533039}
+      - {x: 10.373303, y: -1.0933332}
+      - {x: 9.946667, y: -1.0933038}
+      - {x: 9.946637, y: -0.7733333}
+      - {x: 9.413333, y: -0.77336264}
+      - {x: 9.413303, y: -1.0933332}
+      - {x: 6.373333, y: -1.0933626}
+      - {x: 6.373362, y: -1.4666666}
+    - - {x: 3.2266371, y: -1.4666666}
+      - {x: 3.2266371, y: -1.0933332}
+      - {x: -2.5333335, y: -1.0933038}
+      - {x: -2.5333042, y: 1.0933334}
+      - {x: 3.2266665, y: 1.0933627}
+      - {x: 3.2266371, y: 1.4666667}
+      - {x: -2.5333335, y: 1.4666961}
+      - {x: -2.5333629, y: 4.9866667}
+      - {x: -2.7466667, y: 4.986637}
+      - {x: -2.7466373, y: -1.4666666}
+    - - {x: 9.466637, y: 3.3333333}
+      - {x: 9.466637, y: 3.5466664}
+      - {x: 8.933333, y: 3.5466373}
+      - {x: 8.933363, y: 3.3333333}
+    - - {x: 8.346637, y: 2.3733332}
+      - {x: 8.346637, y: 2.5866663}
+      - {x: 7.813333, y: 2.5866373}
+      - {x: 7.8133626, y: 2.3733332}
+    - - {x: 6.586637, y: -0.18666661}
+      - {x: 6.586637, y: 0.18666661}
+      - {x: 3.1733332, y: 0.1866373}
+      - {x: 3.1733625, y: -0.18666661}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -24166,10 +23757,22 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1938206388}
+  m_TargetGraphic: {fileID: 764971041}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764971043}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1938206388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24435,7 +24038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2110870492
 BoxCollider2D:
   m_ObjectHideFlags: 0
